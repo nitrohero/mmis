@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <script nonce="068b6b05-aaa3-4ac9-a5fb-5062fadd7407">
-        (function (w, d) {
-            ! function (a, e, t, r) {
+        (function(w, d) {
+            ! function(a, e, t, r) {
                 a.zarazData = a.zarazData || {}, a.zarazData.executed = [], a.zaraz = {
                     deferred: []
-                }, a.zaraz.q = [], a.zaraz._f = function (e) {
-                    return function () {
+                }, a.zaraz.q = [], a.zaraz._f = function(e) {
+                    return function() {
                         var t = Array.prototype.slice.call(arguments);
                         a.zaraz.q.push({
                             m: e,
@@ -26,7 +26,7 @@
                         })
                     }
                 };
-                for (const e of ["track", "set", "ecommerce", "debug"]) a.zaraz[e] = a.zaraz._f(e);
+                for (const e of["track", "set", "ecommerce", "debug"]) a.zaraz[e] = a.zaraz._f(e);
                 a.addEventListener("DOMContentLoaded", (() => {
                     var t = e.getElementsByTagName(r)[0],
                         z = e.createElement(r),
@@ -36,7 +36,7 @@
                         a.zarazData.q.push(e)
                     }
                     z.defer = !0;
-                    for (const e of [localStorage, sessionStorage]) Object.keys(e).filter((a => a.startsWith("_zaraz_"))).forEach((t => a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t))));
+                    for (const e of[localStorage, sessionStorage]) Object.keys(e).filter((a => a.startsWith("_zaraz_"))).forEach((t => a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t))));
                     z.referrerPolicy = "origin", z.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData))), t.parentNode.insertBefore(z, t)
                 }))
             }(w, d, 0, "script");
@@ -55,18 +55,18 @@
                                 <a href="index.html">
                                     <script data-pagespeed-no-defer>
                                         //<![CDATA[
-                                        (function () {
-                                            for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) {
-                                                if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
-                                                b != Array.prototype && b != Object.prototype && (b[c] = a.value)
-                                            }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) {
+                                        (function() {
+                                            for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function(b, c, a) {
+                                                    if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
+                                                    b != Array.prototype && b != Object.prototype && (b[c] = a.value)
+                                                }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) {
                                                 var m = k[l];
                                                 m in h || (h[m] = {});
                                                 h = h[m]
                                             }
                                             var n = k[k.length - 1],
                                                 p = h[n],
-                                                q = p ? p : function (b) {
+                                                q = p ? p : function(b) {
                                                     var c;
                                                     if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");
                                                     c = this + "";
@@ -105,7 +105,7 @@
                                                 else if (c.attachEvent) c.attachEvent("onload", b);
                                                 else {
                                                     var a = c.onload;
-                                                    c.onload = function () {
+                                                    c.onload = function() {
                                                         b.call(this);
                                                         a && a.call(this)
                                                     }
@@ -143,13 +143,13 @@
                                                 a && (b.a.push(e),
                                                     b.c[e] = !0)
                                             }
-                                            y.prototype.checkImageForCriticality = function (b) {
+                                            y.prototype.checkImageForCriticality = function(b) {
                                                 b.getBoundingClientRect && z(this, b)
                                             };
-                                            u("pagespeed.CriticalImages.checkImageForCriticality", function (b) {
+                                            u("pagespeed.CriticalImages.checkImageForCriticality", function(b) {
                                                 x.checkImageForCriticality(b)
                                             });
-                                            u("pagespeed.CriticalImages.checkCriticalImages", function () {
+                                            u("pagespeed.CriticalImages.checkCriticalImages", function() {
                                                 A(x)
                                             });
 
@@ -178,7 +178,7 @@
                                                         } catch (r) {
                                                             try {
                                                                 f = new ActiveXObject("Microsoft.XMLHTTP")
-                                                            } catch (D) { }
+                                                            } catch (D) {}
                                                         }
                                                         f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
                                                     }
@@ -204,23 +204,20 @@
                                                 return b
                                             }
                                             var C = "";
-                                            u("pagespeed.CriticalImages.getBeaconData", function () {
+                                            u("pagespeed.CriticalImages.getBeaconData", function() {
                                                 return C
                                             });
-                                            u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) {
+                                            u("pagespeed.CriticalImages.Run", function(b, c, a, d, e, f) {
                                                 var r = new y(b, c, a, e, f);
                                                 x = r;
-                                                d && w(function () {
-                                                    window.setTimeout(function () {
+                                                d && w(function() {
+                                                    window.setTimeout(function() {
                                                         A(r)
                                                     }, 0)
                                                 })
                                             });
                                         })();
-                                    </script><img
-                                        src="assets/img/logo/asset2.png" width="180" height="80"
-                                        alt="" data-pagespeed-url-hash="1320415278"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    </script><img src="assets/img/logo/asset1.png" width="260" height="65" alt="" data-pagespeed-url-hash="1320415278" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 </a>
                             </div>
 
@@ -258,10 +255,7 @@
                     <div class="slider-cap-wrapper">
                         <div class="hero-caption">
                             <h1 data-animation="fadeInUp" data-delay=".2s">Lets Make your Interior Better</h1>
-                            <p data-animation="fadeInUp" data-delay=".6s">Interior work is not just a physical
-                                apperance, It contains emotions, efforts and choices people bring their hard earned
-                                money and we provide them best possible interior designing solutions. We not only focus
-                                on building bussiness
+                            <p data-animation="fadeInUp" data-delay=".6s">Interior work is not just a physical apperance, It contains emotions, efforts and choices people bring their hard earned money and we provide them best possible interior designing solutions. We not only focus on building bussiness
                                 but also maintaining relationships.</p>
                             <a href="#" class="btn hero-btn" data-animation="fadeInUp" data-delay="1s">Explore Our
                                 Services</a>
@@ -274,12 +268,8 @@
                                 };
                                 //]]>
                             </script>
-                            <script type="text/javascript"
-                                src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
-                            <img data-cfsrc="assets/img/hero/h1_hero1.jpg" alt="" data-animation="fadeInRight"
-                                data-transition-duration="5s" data-pagespeed-url-hash="3933324781"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                style="display:none;visibility:hidden;"><noscript><img
+                            <script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+                            <img data-cfsrc="assets/img/hero/h1_hero1.jpg" alt="" data-animation="fadeInRight" data-transition-duration="5s" data-pagespeed-url-hash="3933324781" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                     src="assets/img/hero/h1_hero1.jpg" alt="" data-animation="fadeInRight"
                                     data-transition-duration="5s" data-pagespeed-url-hash="3933324781"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
@@ -297,8 +287,8 @@
 
                         <div class="section-tittle text-center mb-60">
                             <h2>What We Do</h2>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -307,10 +297,7 @@
                         <div class="properties mb-40">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img data-cfsrc="assets/img/gallery/services1.jpg" alt=""
-                                            data-pagespeed-url-hash="1985671101"
-                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                            style="display:none;visibility:hidden;"><noscript><img
+                                    <a href="#"><img data-cfsrc="assets/img/gallery/services1.jpg" alt="" data-pagespeed-url-hash="1985671101" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                                 src="assets/img/gallery/services1.jpg" alt=""
                                                 data-pagespeed-url-hash="1985671101"
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript></a>
@@ -328,10 +315,7 @@
                         <div class="properties mb-40">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img data-cfsrc="assets/img/gallery/services2.jpg" alt=""
-                                            data-pagespeed-url-hash="2280171022"
-                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                            style="display:none;visibility:hidden;"><noscript><img
+                                    <a href="#"><img data-cfsrc="assets/img/gallery/services2.jpg" alt="" data-pagespeed-url-hash="2280171022" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                                 src="assets/img/gallery/services2.jpg" alt=""
                                                 data-pagespeed-url-hash="2280171022"
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript></a>
@@ -347,10 +331,7 @@
                         <div class="properties mb-40">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img data-cfsrc="assets/img/gallery/services3.jpg" alt=""
-                                            data-pagespeed-url-hash="2574670943"
-                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                            style="display:none;visibility:hidden;"><noscript><img
+                                    <a href="#"><img data-cfsrc="assets/img/gallery/services3.jpg" alt="" data-pagespeed-url-hash="2574670943" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                                 src="assets/img/gallery/services3.jpg" alt=""
                                                 data-pagespeed-url-hash="2574670943"
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript></a>
@@ -372,9 +353,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-7 col-lg-5 col-md-11">
                         <div class="support-location-img">
-                            <img data-cfsrc="assets/img/gallery/about.png" alt="" data-pagespeed-url-hash="4005073871"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                style="display:none;visibility:hidden;"><noscript><img
+                            <img data-cfsrc="assets/img/gallery/about.png" alt="" data-pagespeed-url-hash="4005073871" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                     src="assets/img/gallery/about.png" alt="" data-pagespeed-url-hash="4005073871"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
                         </div>
@@ -386,9 +365,7 @@
                                 <h2>We design with <br> aesthetic sense <span></span></h2>
                             </div>
                             <div class="support-caption">
-                                <p class="pera-top">Aesthetic means shows your customer the right things in the right
-                                    way.We believe that people prefer pretty things and it is central idea to the
-                                    interior designing field.Aesthetic designing includes balance colors, pattern,
+                                <p class="pera-top">Aesthetic means shows your customer the right things in the right way.We believe that people prefer pretty things and it is central idea to the interior designing field.Aesthetic designing includes balance colors, pattern,
                                     scale, shape & visual aspects and we Make My Interiors design with aesthetic sense.
                                 </p>
 
@@ -399,9 +376,7 @@
                 </div>
             </div>
             <div class="about-shape">
-                <img data-cfsrc="assets/img/gallery/about-shape.jpg" alt="" data-pagespeed-url-hash="3653010735"
-                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                    style="display:none;visibility:hidden;"><noscript><img src="assets/img/gallery/about-shape.jpg"
+                <img data-cfsrc="assets/img/gallery/about-shape.jpg" alt="" data-pagespeed-url-hash="3653010735" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img src="assets/img/gallery/about-shape.jpg"
                         alt="" data-pagespeed-url-hash="3653010735"
                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
             </div>
@@ -419,16 +394,11 @@
 
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
-                                        <img data-cfsrc="assets/img/gallery/testi-logo.png" alt=""
-                                            data-pagespeed-url-hash="403092385"
-                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                            style="display:none;visibility:hidden;"><noscript><img
+                                        <img data-cfsrc="assets/img/gallery/testi-logo.png" alt="" data-pagespeed-url-hash="403092385" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                                 src="assets/img/gallery/testi-logo.png" alt=""
                                                 data-pagespeed-url-hash="403092385"
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
-                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost un real orthographic eaque ipsa quae elit small batch freegan sed.
-                                            Craft beer elit seitan exercitation</p>
+                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an almost un real orthographic eaque ipsa quae elit small batch freegan sed. Craft beer elit seitan exercitation</p>
                                     </div>
 
                                     <div class="testimonial-founder  ">
@@ -443,16 +413,11 @@
 
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
-                                        <img data-cfsrc="assets/img/gallery/testi-logo.png" alt=""
-                                            data-pagespeed-url-hash="403092385"
-                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                            style="display:none;visibility:hidden;"><noscript><img
+                                        <img data-cfsrc="assets/img/gallery/testi-logo.png" alt="" data-pagespeed-url-hash="403092385" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                                 src="assets/img/gallery/testi-logo.png" alt=""
                                                 data-pagespeed-url-hash="403092385"
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
-                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost un real orthographic eaque ipsa quae elit small batch freegan sed.
-                                            Craft beer elit seitan exercitation</p>
+                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an almost un real orthographic eaque ipsa quae elit small batch freegan sed. Craft beer elit seitan exercitation</p>
                                     </div>
 
                                     <div class="testimonial-founder  ">
@@ -467,16 +432,11 @@
 
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
-                                        <img data-cfsrc="assets/img/gallery/testi-logo.png" alt=""
-                                            data-pagespeed-url-hash="403092385"
-                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                            style="display:none;visibility:hidden;"><noscript><img
+                                        <img data-cfsrc="assets/img/gallery/testi-logo.png" alt="" data-pagespeed-url-hash="403092385" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                                 src="assets/img/gallery/testi-logo.png" alt=""
                                                 data-pagespeed-url-hash="403092385"
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
-                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost un real orthographic eaque ipsa quae elit small batch freegan sed.
-                                            Craft beer elit seitan exercitation</p>
+                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an almost un real orthographic eaque ipsa quae elit small batch freegan sed. Craft beer elit seitan exercitation</p>
                                     </div>
 
                                     <div class="testimonial-founder  ">
@@ -500,8 +460,7 @@
 
                         <div class="section-tittle text-center mb-60">
                             <h2>Our Work</h2>
-                            <p> We understand requirements & taste, We know trends, We do homework then we prepare &
-                                provide best solution to our clients.</p>
+                            <p> We understand requirements & taste, We know trends, We do homework then we prepare & provide best solution to our clients.</p>
                         </div>
                     </div>
                 </div>
@@ -512,68 +471,56 @@
                         <div class="col-lg-12">
 
                             <div class="single-location">
-                                <img data-cfsrc="assets/img/gallery/room_design1.jpg" alt=""
-                                    data-pagespeed-url-hash="1570503467"
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                    style="display:none;visibility:hidden;"><noscript><img
+                                <img data-cfsrc="assets/img/gallery/room_design1.jpg" alt="" data-pagespeed-url-hash="1570503467" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                         src="assets/img/gallery/room_design1.jpg" alt=""
                                         data-pagespeed-url-hash="1570503467"
                                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
                                 <div class="location-contents">
                                     <h3><a href="#" class="location-btn">Residential design </a></h3>
-                                    <p>Even the all-powerful Pointing has no control<br> about the blind texts it is an
-                                        almost.</p>
+                                    <p>Even the all-powerful Pointing has no control<br> about the blind texts it is an almost.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
 
                             <div class="single-location">
-                                <img data-cfsrc="assets/img/gallery/room_design2.jpg" alt=""
-                                    data-pagespeed-url-hash="1865003388"
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                    style="display:none;visibility:hidden;"><noscript><img
+                                <img data-cfsrc="assets/img/gallery/room_design2.jpg" alt="" data-pagespeed-url-hash="1865003388" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                         src="assets/img/gallery/room_design2.jpg" alt=""
                                         data-pagespeed-url-hash="1865003388"
                                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
                                 <div class="location-contents">
                                     <h3><a href="#" class="location-btn">Residential design </a></h3>
-                                    <p>Even the all-powerful Pointing has no control <br>about the blind texts it is an
-                                        almost.</p>
+                                    <p>Even the all-powerful Pointing has no control <br>about the blind texts it is an almost.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
 
                             <div class="single-location">
-                                <img data-cfsrc="assets/img/gallery/room_design3.jpg" alt=""
-                                    data-pagespeed-url-hash="2159503309"
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                    style="display:none;visibility:hidden;"><noscript><img
+                                <img data-cfsrc="assets/img/gallery/room_design3.jpg" alt="" data-pagespeed-url-hash="2159503309" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                         src="assets/img/gallery/room_design3.jpg" alt=""
                                         data-pagespeed-url-hash="2159503309"
                                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
                                 <div class="location-contents">
                                     <h3><a href="#" class="location-btn">Residential design </a></h3>
-                                    <p>Even the all-powerful Pointing has no control <br>about the blind texts it is an
-                                        almost.</p>
+                                    <p>Even the all-powerful Pointing has no control <br>about the blind texts it is an almost.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
 
                             <div class="single-location">
-                                <img data-cfsrc="assets/img/gallery/room_design1.jpg" alt=""
-                                    data-pagespeed-url-hash="1570503467"
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                    style="display:none;visibility:hidden;"><noscript><img
+                                <img data-cfsrc="assets/img/gallery/room_design1.jpg" alt="" data-pagespeed-url-hash="1570503467" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img
                                         src="assets/img/gallery/room_design1.jpg" alt=""
                                         data-pagespeed-url-hash="1570503467"
                                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
                                 <div class="location-contents">
                                     <h3><a href="#" class="location-btn">Residential design </a></h3>
-                                    <p>Even the all-powerful Pointing has no control<br> about the blind texts it is an
-                                        almost.</p>
+                                    <p>Even the all-powerful Pointing has no control<br> about the blind texts it is an almost.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -599,8 +546,7 @@
                         <div class="col-xl-12">
                             <div class="wantToWork-caption text-center">
                                 <h2>Let's discuss about your interior</h2>
-                                <p>Even the all-powerful Pointing has no control about the <br> blindtexts it is an
-                                    almost unorthographic.</p>
+                                <p>Even the all-powerful Pointing has no control about the <br> blindtexts it is an almost unorthographic.</p>
                                 <a href="#" class="btn_2 wantToWork-btn">Contact Us</a>
                                 <a href="#" class="btn_1 "><i class="fas fa-phone-alt"></i>+91 9999 999999</a>
                             </div>
@@ -619,45 +565,14 @@
                         <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="single-footer-caption mb-30">
-                                    <div class="mapouter">
-                                        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%"
-                                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                                                src="https://maps.google.com/maps?width=660&amp;height=385&amp;hl=en&amp;q=make my interiors&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-
-                                        </div>
-                                        <style>
-                                            .mapouter {
-                                                position: relative;
-                                                text-align: right;
-                                                width: 100%;
-                                                height: 385px;
-                                            }
-
-                                            .gmap_canvas {
-                                                overflow: hidden;
-                                                background: none !important;
-                                                width: 100%;
-                                                height: 385px;
-                                            }
-
-                                            .gmap_iframe {
-                                                height: 385px !important;
-                                            }
-                                        </style>
-                                    </div>
-
                                     <div class="footer-logo mb-25">
-                                        <a href="index.html"><img data-cfsrc="assets/img/logo/logo2_footer.png" alt=""
-                                                data-pagespeed-url-hash="4184821910"
-                                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                                style="display:none;visibility:hidden;"><noscript><img
-                                                    src="assets/img/logo/Asset 62x.png" alt=""
-                                                    data-pagespeed-url-hash="4184821910"
-                                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript></a>
+                                        <a href="index.html"><img src="assets/img/logo/asset2.png" width="260" height="65" alt=" Make my Interiors logo" data-pagespeed-url-hash="1320415278" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                        </a>
+                                        </a>
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-pera">
-                                            <p>The automated process starts as soon as your clothes go into the machine.
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet a ullam aperiam.
                                             </p>
                                         </div>
                                     </div>
@@ -685,10 +600,7 @@
                                     <p>Copyright &copy;
                                         <script>
                                             document.write(new Date().getFullYear());
-                                        </script> All rights reserved | This template is made with <i
-                                            class="fa fa-heart color-danger" aria-hidden="true"></i> by <a
-                                            href="https://tradixnetwork.com" target="_blank"
-                                            rel="nofollow noopener">Tradix Network</a>
+                                        </script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://tradixnetwork.com" target="_blank" rel="nofollow noopener">Tradix Network</a>
                                     </p>
                                 </div>
                             </div>
@@ -724,8 +636,7 @@
         eval(mod_pagespeed_qlq4NKxnpL);
     </script>
 
-    <script
-        src="assets/js/wow.min.js+jquery.magnific-popup.js+jquery.slicknav.min.js+jquery.counterup.min.js+waypoints.min.js+jquery.nice-select.min.js+contact.js.pagespeed.jc.DRFpi_HtDu.js"></script>
+    <script src="assets/js/wow.min.js+jquery.magnific-popup.js+jquery.slicknav.min.js+jquery.counterup.min.js+waypoints.min.js+jquery.nice-select.min.js+contact.js.pagespeed.jc.DRFpi_HtDu.js"></script>
     <script>
         eval(mod_pagespeed_nb2PiiYO3e);
     </script>
@@ -749,8 +660,7 @@
     <script>
         eval(mod_pagespeed_9gj165c9cs);
     </script>
-    <script
-        src="assets/js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.ajaxchimp.min.js+plugins.js+main.js.pagespeed.jc.NgWVHsTJe3.js"></script>
+    <script src="assets/js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.ajaxchimp.min.js+plugins.js+main.js.pagespeed.jc.NgWVHsTJe3.js"></script>
     <script>
         eval(mod_pagespeed_j08mKaKh8j);
     </script>
