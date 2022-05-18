@@ -217,8 +217,8 @@ li {
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
 }
 
-#back-top {
-    background: #FFC99E;
+#whatsapp-float {
+    background: #09584fc4;
     height: 50px;
     width: 50px;
     right: 31px;
@@ -234,12 +234,12 @@ li {
 }
 
 @media (max-width: 575px) {
-    #back-top {
+    #whatsapp-float {
         right: 16px
     }
 }
 
-#back-top a i {
+#whatsapp-float a i {
     display: block;
     line-height: 50px
 }
@@ -874,17 +874,25 @@ li {
     font-family: "Heebo", sans-serif;
     background-color: #fff;
     border: 1px solid #FFC99E;
+    border-radius: 5px;
     color: #232F55 !important;
     display: inline-block;
-    padding: 17px 28px;
+    padding: 16px 42px;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 1;
     font-size: 16px
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .btn_1 .btn_2 .btn_3 .btn_4 {
+        padding: 0px 10px;
+        margin-bottom: 2200px;
+    }
+}
+
 .btn_1 i {
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 10px;
     color: #FF8B7A;
     -webkit-transition: all .3s ease-out 0s;
@@ -904,19 +912,80 @@ li {
     font-family: "Heebo", sans-serif;
     color: #fff !important;
     border: 2px solid #fff;
+    border-radius: 5px;
     display: inline-block;
     line-height: 1;
     padding: 16px 42px;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 500;
-    margin-right: 13px
+    margin-right: 1px
 }
 
 .btn_2:hover {
     background-color: #fff;
     border: 2px solid #fff;
     color: #FF8B7A !important
+}
+
+.btn_3 {
+    font-family: "Heebo", sans-serif;
+    color: #fff !important;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 1;
+    padding: 16px 41px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px border
+}
+
+.btn_3:hover {
+    background-color: #075e54;
+    border: 3px solid #fff;
+    color: #FFf !important
+}
+
+.btn_4 {
+    font-family: "Heebo", sans-serif;
+    color: #fff !important;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 1;
+    padding: 16px 41px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 13px border
+}
+
+.btn_4:hover {
+    background-color: #075e54;
+    border: 3px solid #fff;
+    color: #FFf !important
+}
+
+.btn_4 {
+    font-family: "Heebo", sans-serif;
+    color: #fff !important;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 1;
+    padding: 16px 41px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px border
+}
+
+.btn_4:hover {
+    background-color: #960A0A;
+    border: 3px solid #fff;
+    color: #FFf !important
 }
 
 .btn.focus,

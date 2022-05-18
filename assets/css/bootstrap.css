@@ -4713,6 +4713,7 @@ screen and (max-height: 300px) {
 
 .fa,
 .fab,
+.bi,
 .fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -4773,6 +4774,8 @@ screen and (max-height: 300px) {
     content: "\f879"
 }
 
+.fa-whatsapp::before {}
+
 .fa-pinterest-p:before {
     content: "\f231"
 }
@@ -4825,11 +4828,13 @@ screen and (max-height: 300px) {
 }
 
 .fa,
+.bi,
 .fas {
     font-family: "Font Awesome 5 Free"
 }
 
 .fa,
+.bi,
 .fas {
     font-weight: 900
 }
