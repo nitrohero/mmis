@@ -124,7 +124,7 @@ ul {
  -----------------------*/
 
 .set-bg {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: top center;
 }

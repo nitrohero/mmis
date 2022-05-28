@@ -543,7 +543,7 @@ li {
 }
 
 .section-img-bg2 {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat
 }
 
