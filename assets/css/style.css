@@ -218,7 +218,7 @@ li {
 }
 
 #whatsapp-float {
-    background: #09584fc4;
+    background: #09584fe4;
     height: 50px;
     width: 50px;
     right: 31px;
@@ -599,8 +599,8 @@ li {
 }
 
 .btn:hover::before {
-    transform: scaleY(1);
-    z-index: -1
+    /* transform: scaleY(1);
+    z-index: -1 */
 }
 
 .border-btn {
@@ -2700,8 +2700,11 @@ li {
     }
 }
 
+
+/* footer background */
+
 .footer-wrappper {
-    background: #232F55
+    background: #ebebeb
 }
 
 .footer-area .footer-pera p {
@@ -2709,7 +2712,7 @@ li {
     padding-right: 52px;
     font-size: 16px;
     margin-bottom: 40px;
-    line-height: 1.8
+    line-height: 1.8;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2784,7 +2787,7 @@ li {
     line-height: 40px;
     display: inline-block;
     text-align: center;
-    margin-right: 8px
+    margin-right: 8px;
 }
 
 .footer-social a:hover {
