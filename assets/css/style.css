@@ -1106,7 +1106,7 @@ li {
     -ms-transition: all .4s ease-out 0s;
     -o-transition: all .4s ease-out 0s;
     transition: all .4s ease-out 0s;
-    background: #232F55
+    background: #FF8E7C
 }
 
 .header-area .main-header .main-menu ul li:hover>a {
@@ -1224,7 +1224,6 @@ li {
 .mobile_menu {
     position: absolute;
     right: 0px;
-    width: 100%;
     z-index: 99
 }
 
