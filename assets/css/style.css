@@ -2736,7 +2736,7 @@ li {
     font-weight: 400;
     font-size: 16px;
     text-decoration: underline transparent;
-    -webkit-transition: all .2s ease-out 0s;
+    -webkit-transition: all .FFC99E2s ease-out 0s;
     -moz-transition: all .2s ease-out 0s;
     -ms-transition: all .2s ease-out 0s;
     -o-transition: all .2s ease-out 0s;
@@ -2769,16 +2769,16 @@ li {
 }
 
 .footer-bottom-area .footer-copy-right p i {
-    color: #FFC99E
+    color: #012970
 }
 
 .footer-bottom-area .footer-copy-right p a {
-    color: #FFC99E
+    color: #012970
 }
 
 .footer-social a {
     background: rgba(128, 136, 255, 0.1);
-    color: #8088FF;
+    color: #292F55;
     width: 40px;
     height: 40px;
     border-radius: 50%;
