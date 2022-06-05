@@ -13,7 +13,7 @@
     <link rel="stylesheet " href="assets/css/bootstrap.css " />
     <link rel="stylesheet " href="assets/css/style.css ">
     <script src="https://kit.fontawesome.com/7707549cbe.js " crossorigin="anonymous "></script>
-    <script nonce="068b6b05-aaa3-4ac9-a5fb-5062fadd7407 ">
+    <script nonce="068b6b05-aaa3-4ac9-a5fb-5062fadd7407">
         (function(w, d) {
             ! function(a, e, t, r) {
                 a.zarazData = a.zarazData || {}, a.zarazData.executed = [], a.zaraz = {
@@ -27,20 +27,20 @@
                         })
                     }
                 };
-                for (const e of["track ", "set ", "ecommerce ", "debug "]) a.zaraz[e] = a.zaraz._f(e);
-                a.addEventListener("DOMContentLoaded ", (() => {
+                for (const e of["track", "set", "ecommerce", "debug"]) a.zaraz[e] = a.zaraz._f(e);
+                a.addEventListener("DOMContentLoaded", (() => {
                     var t = e.getElementsByTagName(r)[0],
                         z = e.createElement(r),
-                        n = e.getElementsByTagName("title ")[0];
-                    for (n && (a.zarazData.t = e.getElementsByTagName("title ")[0].text), a.zarazData.x = Math.random(), a.zarazData.w = a.screen.width, a.zarazData.h = a.screen.height, a.zarazData.j = a.innerHeight, a.zarazData.e = a.innerWidth, a.zarazData.l = a.location.href, a.zarazData.r = e.referrer, a.zarazData.k = a.screen.colorDepth, a.zarazData.n = e.characterSet, a.zarazData.o = (new Date).getTimezoneOffset(), a.zarazData.q = []; a.zaraz.q.length;) {
+                        n = e.getElementsByTagName("title")[0];
+                    for (n && (a.zarazData.t = e.getElementsByTagName("title")[0].text), a.zarazData.x = Math.random(), a.zarazData.w = a.screen.width, a.zarazData.h = a.screen.height, a.zarazData.j = a.innerHeight, a.zarazData.e = a.innerWidth, a.zarazData.l = a.location.href, a.zarazData.r = e.referrer, a.zarazData.k = a.screen.colorDepth, a.zarazData.n = e.characterSet, a.zarazData.o = (new Date).getTimezoneOffset(), a.zarazData.q = []; a.zaraz.q.length;) {
                         const e = a.zaraz.q.shift();
                         a.zarazData.q.push(e)
                     }
                     z.defer = !0;
-                    for (const e of[localStorage, sessionStorage]) Object.keys(e).filter((a => a.startsWith("_zaraz_ "))).forEach((t => a.zarazData["z_ " + t.slice(7)] = JSON.parse(e.getItem(t))));
-                    z.referrerPolicy = "origin ", z.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData))), t.parentNode.insertBefore(z, t)
+                    for (const e of[localStorage, sessionStorage]) Object.keys(e).filter((a => a.startsWith("_zaraz_"))).forEach((t => a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t))));
+                    z.referrerPolicy = "origin", z.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData))), t.parentNode.insertBefore(z, t)
                 }))
-            }(w, d, 0, " script ");
+            }(w, d, 0, "script");
         })(window, document);
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -59,20 +59,20 @@
 
 <body>
     <header>
-        <div class="header-area header-transparent ">
-            <div class="main-header header-sticky ">
-                <div class="container-fluid ">
-                    <div class="menu-wrapper d-flex align-items-center justify-content-between ">
-                        <div class="left-content d-flex align-items-center ">
-                            <div class="logo mr-45 ">
+        <div class="header-area header-transparent">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                        <div class="left-content d-flex align-items-center">
+                            <div class="logo mr-45">
                                 <a href="https://makemyinteriors.in/">
                                     <script data-pagespeed-no-defer>
                                         //<![CDATA[
                                         (function() {
-                                            for (var g = "function " == typeof Object.defineProperties ? Object.defineProperty : function(b, c, a) {
-                                                    if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters. ");
+                                            for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function(b, c, a) {
+                                                    if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
                                                     b != Array.prototype && b != Object.prototype && (b[c] = a.value)
-                                                }, h = "undefined " != typeof window && window === this ? this : "undefined " != typeof global && null != global ? global : this, k = ["String ", "prototype ", "repeat "], l = 0; l < k.length - 1; l++) {
+                                                }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) {
                                                 var m = k[l];
                                                 m in h || (h[m] = {});
                                                 h = h[m]
@@ -81,11 +81,11 @@
                                                 p = h[n],
                                                 q = p ? p : function(b) {
                                                     var c;
-                                                    if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined ");
-                                                    c = this + " ";
-                                                    if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value ");
+                                                    if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");
+                                                    c = this + "";
+                                                    if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value");
                                                     b |= 0;
-                                                    for (var a = " "; b;)
+                                                    for (var a = ""; b;)
                                                         if (b & 1 && (a += c), b >>>= 1) c += c;
                                                     return a
                                                 };
@@ -97,7 +97,7 @@
                                             var t = this;
 
                                             function u(b, c) {
-                                                var a = b.split(". "),
+                                                var a = b.split("."),
                                                     d = t;
                                                 a[0] in d || !d.execScript || d.execScript("var " + a[0]);
                                                 for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c
@@ -114,8 +114,8 @@
 
                                             function w(b) {
                                                 var c = window;
-                                                if (c.addEventListener) c.addEventListener("load ", b, !1);
-                                                else if (c.attachEvent) c.attachEvent("onload ", b);
+                                                if (c.addEventListener) c.addEventListener("load", b, !1);
+                                                else if (c.attachEvent) c.attachEvent("onload", b);
                                                 else {
                                                     var a = c.onload;
                                                     c.onload = function() {
@@ -142,15 +142,15 @@
                                             }
 
                                             function z(b, c) {
-                                                var a, d, e = c.getAttribute("data-pagespeed-url-hash ");
+                                                var a, d, e = c.getAttribute("data-pagespeed-url-hash");
                                                 if (a = e && !(e in b.c))
                                                     if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1;
                                                     else {
                                                         d = c.getBoundingClientRect();
                                                         var f = document.body;
-                                                        a = d.top + ("pageYOffset " in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop);
-                                                        d = d.left + ("pageXOffset " in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft);
-                                                        f = a.toString() + ", " + d;
+                                                        a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop);
+                                                        d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft);
+                                                        f = a.toString() + "," + d;
                                                         b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width)
                                                     }
                                                 a && (b.a.push(e),
@@ -159,23 +159,23 @@
                                             y.prototype.checkImageForCriticality = function(b) {
                                                 b.getBoundingClientRect && z(this, b)
                                             };
-                                            u("pagespeed.CriticalImages.checkImageForCriticality ", function(b) {
+                                            u("pagespeed.CriticalImages.checkImageForCriticality", function(b) {
                                                 x.checkImageForCriticality(b)
                                             });
-                                            u("pagespeed.CriticalImages.checkCriticalImages ", function() {
+                                            u("pagespeed.CriticalImages.checkCriticalImages", function() {
                                                 A(x)
                                             });
 
                                             function A(b) {
                                                 b.b = {};
-                                                for (var c = ["IMG ", "INPUT "], a = [], d = 0; d < c.length; ++d) a = a.concat(v(document.getElementsByTagName(c[d])));
+                                                for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a.concat(v(document.getElementsByTagName(c[d])));
                                                 if (a.length && a[0].getBoundingClientRect) {
                                                     for (d = 0; c = a[d]; ++d) z(b, c);
                                                     a = "oh=" + b.l;
-                                                    b.f && (a += " &n=" + b.f);
+                                                    b.f && (a += "&n=" + b.f);
                                                     if (c = !!b.a.length)
-                                                        for (a += " &ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) {
-                                                            var e = " , " + encodeURIComponent(b.a[d]);
+                                                        for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) {
+                                                            var e = "," + encodeURIComponent(b.a[d]);
                                                             131072 >= a.length + e.length && (a += e)
                                                         }
                                                     b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0);
@@ -187,13 +187,13 @@
                                                         if (window.XMLHttpRequest) f =
                                                             new XMLHttpRequest;
                                                         else if (window.ActiveXObject) try {
-                                                            f = new ActiveXObject(" Msxml2.XMLHTTP ")
+                                                            f = new ActiveXObject("Msxml2.XMLHTTP")
                                                         } catch (r) {
                                                             try {
-                                                                f = new ActiveXObject("Microsoft.XMLHTTP ")
+                                                                f = new ActiveXObject("Microsoft.XMLHTTP")
                                                             } catch (D) {}
                                                         }
-                                                        f && (f.open("POST ", d + (-1 == d.indexOf("? ") ? "? " : "& ") + "url=" + encodeURIComponent(b)), f.setRequestHeader(" Content-Type ", "application/x-www-form-urlencoded "), f.send(a))
+                                                        f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
                                                     }
                                                 }
                                             }
@@ -201,12 +201,12 @@
                                             function B() {
                                                 var b = {},
                                                     c;
-                                                c = document.getElementsByTagName("IMG ");
+                                                c = document.getElementsByTagName("IMG");
                                                 if (!c.length) return {};
                                                 var a = c[0];
-                                                if (!("naturalWidth " in a && "naturalHeight " in a)) return {};
+                                                if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
                                                 for (var d = 0; a = c[d]; ++d) {
-                                                    var e = a.getAttribute("data-pagespeed-url-hash ");
+                                                    var e = a.getAttribute("data-pagespeed-url-hash");
                                                     e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = {
                                                         rw: a.width,
                                                         rh: a.height,
@@ -216,11 +216,11 @@
                                                 }
                                                 return b
                                             }
-                                            var C = " ";
-                                            u("pagespeed.CriticalImages.getBeaconData ", function() {
+                                            var C = "";
+                                            u("pagespeed.CriticalImages.getBeaconData", function() {
                                                 return C
                                             });
-                                            u("pagespeed.CriticalImages.Run ", function(b, c, a, d, e, f) {
+                                            u("pagespeed.CriticalImages.Run", function(b, c, a, d, e, f) {
                                                 var r = new y(b, c, a, e, f);
                                                 x = r;
                                                 d && w(function() {
@@ -230,44 +230,30 @@
                                                 })
                                             });
                                         })();
-                                    </script><img src="assets/img/logo/asset1.png " width="260 " height="65 " alt=" " data-pagespeed-url-hash="1320415278 " onload="pagespeed.CriticalImages.checkImageForCriticality(this); ">
+                                    </script>
+                                    <img src="assets/img/logo/asset1.png " width="260 " height="65 " alt=" " data-pagespeed-url-hash="1320415278 " onload="pagespeed.CriticalImages.checkImageForCriticality(this); ">
                                 </a>
                             </div>
 
-                            <div class="main-menu d-none d-lg-block ">
+                            <div class="main-menu d-none d-lg-block">
                                 <nav>
-                                    <ul id="navigation ">
-                                        <li><a class="nav-link scrollto " href="https://makemyinteriors.in/">Home</a></li>
-                                        <li><a class="nav-link scrollto " href="#services ">Services</a></li>
-                                        <li><a class="nav-link scrollto " href="#work">Work</a></li>
-                                        <li><a class="nav-link scrollto " href="about">About</a></li>
-                                        <li><a class="nav-link scrollto " href="#contact ">Contact</a></li>
+                                    <ul id="navigation">
+                                        <li><a href="https://makemyinteriors.in/">Home</a></li>
+                                        <li><a href="#services">Services</a></li>
+                                        <li><a href="work">Our Work</a></li>
+                                        <li><a href="about">About us</a></li>
+                                        <li><a href="#contact">Contact us</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
 
-                        <div class="buttons ">
 
-                        </div>
                     </div>
 
                     <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none ">
-                            <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
-                                <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-                                    <li><a href="index.html" role="menuitem" tabindex="-1">Home</a></li>
-                                    <li><a href="services.html" role="menuitem" tabindex="-1">Services</a></li>
-                                    <li><a href="work.html" role="menuitem" tabindex="-1">Work</a></li>
-                                    <li><a href="about.html" role="menuitem" tabindex="-1">About</a></li>
-
-                                    <li><a href="contact.html" role="menuitem" tabindex="-1">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="mobile_menu d-block d-lg-none"></div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -315,7 +301,7 @@
 
                             <div class="section-tittle text-center mb-60 ">
                                 <h2>What We Do</h2>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                                <p>We have a Strategy for Serving Things Right
                                 </p>
                             </div>
                         </div>
@@ -334,7 +320,7 @@
                                         <h3>
                                             <a href="# ">Modular Kitchen</a>
                                         </h3>
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                        <p>The kitchen is where you put all the ingredients together. No matter what you do in life, you have to have a plan and put it together.</p>
                                     </div>
                                 </div>
                             </div>
@@ -350,7 +336,7 @@
                                     </div>
                                     <div class="properties__caption ">
                                         <h3><a href="# ">Residential Interior Designing</a></h3>
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                        <p>It’s time to invest in yourself by investing in your home.</p>
                                     </div>
                                 </div>
                             </div>
@@ -366,7 +352,7 @@
                                     </div>
                                     <div class="properties__caption ">
                                         <h3><a href="# ">Commercial Interior Designing</a></h3>
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                        <p>Great Work makes a Great office</p>
                                     </div>
                                 </div>
                             </div>
@@ -427,12 +413,13 @@
                                                 src="assets/img/gallery/testi-logo.png " alt=" "
                                                 data-pagespeed-url-hash="403092385 "
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this); "></noscript>
-                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an almost un real orthographic eaque ipsa quae elit small batch freegan sed. Craft beer elit seitan exercitation</p>
+                                        <p>"Make my Interiora were great. They really took the time to understand my style and helped me express myself in my home. The team's attention to detail was phenomenal. They did an amazing job blending my old and
+                                            new furniture and decor. I'd definitely recommend them.</p>
                                     </div>
 
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img">
-                                            <span>- Robert</span>
+                                            <span>- Ashish Pawar</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -446,12 +433,13 @@
                                                 src="assets/img/gallery/testi-logo.png" alt=""
                                                 data-pagespeed-url-hash="403092385"
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
-                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an almost un real orthographic eaque ipsa quae elit small batch freegan sed. Craft beer elit seitan exercitation</p>
+                                        <p>"Make My Interiors team has turned out flat into a dream home. I would definitely recommend it to others. Bhushan, Kiran and the team is very professional and working with them was fun!!! They very well understood
+                                            our requirements in design and budget perspective and provided the best possible within the agreed timeline </p>
                                     </div>
 
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img">
-                                            <span>- Robert</span>
+                                            <span>- Kriti Shukla</span>
                                         </div>
                                     </div>
                                 </div>
@@ -465,12 +453,12 @@
                                                 src="assets/img/gallery/testi-logo.png" alt=""
                                                 data-pagespeed-url-hash="403092385"
                                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
-                                        <p>"Even the all-powerful Pointing has no control about the blind texts it is an almost un real orthographic eaque ipsa quae elit small batch freegan sed. Craft beer elit seitan exercitation</p>
+                                        <p>"Great interior designer, I loved there work because that is according to the committed time as they proposed.</p>
                                     </div>
 
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img">
-                                            <span>- Robert</span>
+                                            <span>- Sahil Madavi</span>
                                         </div>
                                     </div>
                                 </div>
@@ -489,7 +477,7 @@
 
                             <div class="section-tittle text-center mb-60">
                                 <h2>Our Work</h2>
-                                <p> We understand requirements &amp; taste, We know trends, We do homework then we prepare &amp; provide best solution to our clients.</p>
+                                <p>The way we work together determines the way we succeed.</p>
                             </div>
                         </div>
                     </div>
@@ -575,7 +563,7 @@
                                 <div class="col-xl-12">
                                     <div class="wantToWork-caption text-center">
                                         <h2>Book for free Consultation &amp; 3D designs</h2>
-                                        <p>Even the all-powerful Pointing has no control about the <br> blindtexts it is an almost unorthographic.</p>
+
 
                                         <a href="tel:+919834375579" class="btn_1 "><i class="fa-solid fa-phone fa-xl"></i>+91 9834375579</a>
 

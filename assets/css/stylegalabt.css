@@ -11350,9 +11350,9 @@ body:after {
     font-size: .8rem;
     margin: 5px;
     letter-spacing: .2rem;
-    background: rgba(52, 58, 64, 0.05);
+    background: rgba(35, 47, 85, 0.355);
     color: #343a40;
-    padding: 5px 20px;
+    ````````````````` padding: 5px 20px;
     border-radius: 30px !important;
     border: none !important;
     text-transform: uppercase;
