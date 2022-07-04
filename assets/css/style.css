@@ -2702,6 +2702,15 @@ li {
 
 /* footer background */
 
+.footlogo {
+    align-items: center;
+}
+
+.footpera {
+    text-align: center;
+    margin-left: 30px;
+}
+
 .footer-wrappper {
     background: #ebebeb
 }
@@ -2710,7 +2719,7 @@ li {
     color: #A5A7C5;
     padding-right: 52px;
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1.8;
 }
 
@@ -2723,7 +2732,7 @@ li {
 .footer-area .footer-tittle h4 {
     color: #fff;
     font-size: 22px;
-    margin-bottom: 29px;
+    margin-bottom: 9px;
     font-weight: 600
 }
 
